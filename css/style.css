@@ -94,6 +94,7 @@ li img {
   width: calc(100% - 400px);
 }
 
+/* HEADER */
 header{
   height: 60px;
   background-color: #eaeaea;
@@ -103,12 +104,15 @@ header{
   font-size: 10px;
 }
 
+/* MAIN CHAT */
+
 #chat{
   background-image: url(../img/mine.jpg);
   height: calc(90vh - 120px);
   overflow-y: auto;
 }
 
+/* FOOTER TEXTBAR */
 footer{
   height: 60px;
   background-color: #f3eeea;
