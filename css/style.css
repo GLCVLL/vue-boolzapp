@@ -112,6 +112,25 @@ header{
   overflow-y: auto;
 }
 
+.sent-message {
+  background-color: #d5f9ba;
+  color: #000;
+  align-self: flex-end;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.received-message {
+  background-color: #fff;
+  color: #000;
+  align-self: flex-start;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 
 /* FOOTER TEXTBAR */
 footer{

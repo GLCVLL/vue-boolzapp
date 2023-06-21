@@ -56,37 +56,9 @@
                     </div>
                     <!-- CONTACT LIST -->
                     <ul id="my-list" class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <img src="img/avatar_io.jpg" alt="carla">
-                            <h6 class="mx-2">Carla</h6>
-                        </li>
-                        <li class="list-group-item">
-                            <img src="img/avatar_3.jpg" alt="fabio">
-                            <h6 class="mx-2">Fabio</h6>
-                        </li>
-                        <li class="list-group-item">
-                            <img src="img/avatar_4.jpg" alt="samuele">
-                            <h6 class="mx-2">Samuele</h6>
-                        </li>
-                        <li class="list-group-item">
-                            <img src="img/avatar_5.jpg" alt="Mattia">
-                            <h6 class="mx-2">Mattia</h6>
-                        </li>
-                        <li class="list-group-item">
-                            <img src="img/avatar_1.jpg" alt="michele">
-                            <h6 class="mx-2">Michele</h6>
-                        </li>
-                        <li class="list-group-item">
-                            <img src="img/avatar_7.jpg" alt="tristan">
-                            <h6 class="mx-2">Tristan</h6>
-                        </li>
-                        <li class="list-group-item">
-                            <img src="img/avatar_8.jpg" alt="andrea">
-                            <h6 class="mx-2">Andrea</h6>
-                        </li>
-                        <li class="list-group-item">
-                            <img src="img/avatar_6.jpg" alt="maria">
-                            <h6 class="mx-2">Maria</h6>
+                        <li v-for="contact in contacts" :key="contact.id" class="list-group-item">
+                            <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="contact.name">
+                            <h6 class="mx-2">{{ contact.name }}</h6>
                         </li>
                     </ul>
                 </div>
