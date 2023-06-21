@@ -32,3 +32,33 @@ main {
 }
 
 /* NOTIFICATIONS */
+
+.sidebar-notifications{
+  height: 70px;
+  background-color: #8edafc;
+}
+
+.sidebar-notifications .circle{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #8edafc;
+}
+
+.notifications-text h6{
+  font-size: 12px;
+}
+
+.notifications-text a{
+  font-size: 10px;
+  color: #b1b1b1;
+}
