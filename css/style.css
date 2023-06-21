@@ -62,3 +62,10 @@ main {
   font-size: 10px;
   color: #b1b1b1;
 }
+
+/* SIDEBAR LIST */
+
+.search-bar{
+  background-color: #fafafa;
+  height: 50px;
+}
