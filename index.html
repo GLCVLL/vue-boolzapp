@@ -20,7 +20,7 @@
 <body>
     <div id="root"  class="container vh-100 d-flex align-items-center justify-content-center">
         <!-- main layout-->
-        <main>
+        <main class="d-flex align-items-center justify-content-center">
             <!-- SIDEBAR -->
             <div class="sidebar">
                 <!-- SIDEBAR HEADER -->
@@ -91,7 +91,24 @@
                     </ul>
                 </div>
             </div>
-            <div class="main-elements"></div>
+            <div class="main-elements">
+                <header class="d-flex align-items-center justify-content-between">
+                    <div class="header-left d-flex align-items-center">
+                        <img src="img/avatar_io.jpg" alt="carla" class="mx-2">
+                        <div class="mx-2 pt-2">
+                            <h6>Carla</h6>
+                            <p>Ultimo accesso oggi alle</p>
+                        </div>
+                    </div>
+                        <div class="header-right d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass mx-2"></i>
+                        <i class="fa-solid fa-paperclip mx-2"></i>
+                        <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+                    </div>
+                </header>
+                <main id="chat"></main>
+                <footer></footer>
+            </div>
         </main>
     </div>
 </body>

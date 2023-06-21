@@ -86,3 +86,30 @@ li img {
   height: 60px;
   border-radius: 50%;
 }
+
+/* MAIN ELEMENTS */
+
+.main-elements{
+  height: 100%;
+  width: calc(100% - 400px);
+}
+
+header{
+  height: 60px;
+  background-color: #eaeaea;
+}
+
+.header-left p{
+  font-size: 10px;
+}
+
+#chat{
+  background-image: url(../img/mine.jpg);
+  height: calc(90vh - 120px);
+  overflow-y: auto;
+}
+
+footer{
+  height: 60px;
+  background-color: #f3eeea;
+}
