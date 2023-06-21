@@ -13,7 +13,6 @@ main {
 .sidebar {
   height: 100%;
   width: 400px;
-  background-color: black;
 }
 
 .sidebar-header {
@@ -65,7 +64,25 @@ main {
 
 /* SIDEBAR LIST */
 
+/* search bar */
 .search-bar{
   background-color: #fafafa;
   height: 50px;
+}
+
+/* contact list */
+
+#my-list{
+  height: calc(90vh - 180px);
+  overflow-y: auto;
+}
+
+.list-group-item {
+  display: flex;
+}
+
+li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
