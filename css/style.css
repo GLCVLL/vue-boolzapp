@@ -1,3 +1,34 @@
-body{
-    background-image: linear-gradient(#009688 100px, #dadbd4);
+/* GENERAL */
+body {
+  background-image: linear-gradient(#009688 100px, #dadbd4 100px);
 }
+
+main {
+  height: 90vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* SIDEBAR */
+.sidebar {
+  height: 100%;
+  width: 400px;
+  background-color: black;
+}
+
+.sidebar-header {
+  background-color: #eaeaea;
+  height: 60px;
+}
+
+.header-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header-right {
+  color: #b1b1b1;
+}
+
+/* NOTIFICATIONS */
