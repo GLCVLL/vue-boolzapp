@@ -227,6 +227,14 @@ const app = Vue.createApp({
           this.currentContact.messages.push(newMessage);
           // riporto a stringa vuota l'input così da poter scrivere un nuovo messaggio
           messageInput.value = '';
+          // dopo un secondo rispondo ok
+          setTimeout(() => {
+            this.currentContact.messages.push({
+              message: "Ok",
+              date: '10/01/2020 15:30:55',
+              status: 'received',
+            });
+          }, 1000);
         }
     },
 });
