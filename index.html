@@ -56,7 +56,7 @@
                     </div>
                     <!-- CONTACT LIST -->
                     <ul id="my-list" class="list-group list-group-flush">
-                        <li v-for="(contact, i) in contacts" :key="contact.id" class="list-group-item" @click="setCurrentIndex(i)">
+                        <li v-for="(contact, i) in filteredContacts" :key="contact.id" class="list-group-item" @click="setCurrentIndex(i)">
                             <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="contact.name">
                             <h6 class="mx-2">{{ contact.name }}</h6>
                         </li>
