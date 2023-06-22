@@ -210,6 +210,23 @@ const app = Vue.createApp({
     methods: {
         setCurrentIndex(index) {
           this.currentIndex = index;
+        },
+        sendMessage() {
+          //prendo l'elemento dal dom
+          const messageInput = document.getElementById('messageInput');
+          // prendo il valore dal messaggio dall'user
+          const messageText = messageInput.value;
+          // creo nuovo object 
+          const newMessage = {
+            id: this.currentContact.messages.length + 1,
+            date: '10/01/2020 15:30:55',
+            message: messageText,
+            status: 'sent'
+          };
+          // pusho il nuovo messaggio scritto nella chat del current contact
+          this.currentContact.messages.push(newMessage);
+          // riporto a stringa vuota l'input così da poter scrivere un nuovo messaggio
+          messageInput.value = '';
         }
     },
 });
