@@ -112,24 +112,35 @@ header{
   overflow-y: auto;
 }
 
-.sent-message {
-  background-color: #d5f9ba;
-  color: #000;
-  align-self: flex-end;
-  max-width: 80%;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.message-container{
+  display: flex;
 }
 
-.received-message {
-  background-color: #fff;
-  color: #000;
-  align-self: flex-start;
-  max-width: 80%;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.message-container.sent{
+  justify-content: flex-end;
+}
+
+.message-container.received{
+  justify-content: flex-start;
+}
+
+.message-container.sent.message{
+  background-color: #d5f9ba;
+}
+
+.message-container.received.message{
+  background-color: white;
+}
+
+.message-container .message p{
+  margin-bottom: 0;
+}
+
+.message-container .message time{
+  display: block;
+  text-align: right;
+  font-size: 10px;
+  color: lightgrey;
 }
 
 /* FOOTER TEXTBAR */

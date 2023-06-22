@@ -26,8 +26,8 @@
                 <!-- SIDEBAR HEADER -->
                 <div class="sidebar-header d-flex align-items-center justify-content-between">
                     <div class="header-left d-flex align-items-center">
-                        <img src="img/avatar_2.jpg" alt="Profile picture" class="mx-1">
-                        <h6 class="mx-1">Gioele Iacovella</h6>
+                        <img :src="'img/avatar' + user.avatar + '.jpg'" alt="user.name" class="mx-1">
+                        <h6 class="mx-1">{{ user.name }}</h6>
                     </div>
                     <div class="header-right d-flex align-items-center">
                         <i class="fa-solid fa-circle-notch mx-1"></i>
@@ -63,6 +63,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- MAIN CHAT ELEMENTS -->
             <div class="main-elements">
                 <!-- HEADER -->
                 <header class="d-flex align-items-center justify-content-between">
@@ -81,6 +82,20 @@
                 </header>
                 <!-- MAIN CHAT -->
                 <div id="chat">
+                    <ul class="px-3">
+                        <li class="message-container p-3 sent">
+                            <div class="message p-2 rounded-3">
+                                <p>ciaooo</p>
+                                <time></time>
+                            </div>
+                        </li>
+                        <li class="message-container p-3 received">
+                            <div class="message p-2 rounded-3">
+                                <p>ciaooo</p>
+                                <time></time>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <!-- FOOTER TEXT BAR -->
                 <footer class="d-flex align-items-center justify-content-between">

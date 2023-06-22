@@ -7,7 +7,7 @@ const app = Vue.createApp({
                 name: 'Nome Utente',
                 avatar: '_io'
               },
-              contacts: [
+            contacts: [
                 {
                   id: 1,
                   name: 'Michele',
@@ -198,9 +198,15 @@ const app = Vue.createApp({
                     }
                   ],
                 }
-              ]
+              ],  
+            selectedContact: null,  
         }
-    }
+    },
+    methods: {
+        selectContact(contact) {
+          this.selectedContact = contact;
+        }
+    },
 });
 
 app.mount('#root');
