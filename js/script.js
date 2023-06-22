@@ -206,6 +206,11 @@ const app = Vue.createApp({
     computed:{
         currentContact(){
             return this.contacts[this.currentIndex];
+        },
+        filteredContacts() {
+          return this.contacts.filter(contact => {
+            return contact.name.toLowerCase().includes(this.searchInput.toLowerCase());
+          });
         }
     },
     methods: {
