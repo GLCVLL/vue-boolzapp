@@ -200,6 +200,7 @@ const app = Vue.createApp({
                 }
               ],  
             currentIndex: 0,  
+            searchInput: '',
         }
     },
     computed:{
