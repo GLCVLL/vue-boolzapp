@@ -56,7 +56,7 @@
                     </div>
                     <!-- CONTACT LIST -->
                     <ul id="my-list" class="list-group list-group-flush">
-                        <li v-for="contact in contacts" :key="contact.id" class="list-group-item">
+                        <li v-for="(contact, i) in contacts" :key="contact.id" class="list-group-item" @click="setCurrentIndex(i)">
                             <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="contact.name">
                             <h6 class="mx-2">{{ contact.name }}</h6>
                         </li>
@@ -68,9 +68,9 @@
                 <!-- HEADER -->
                 <header class="d-flex align-items-center justify-content-between">
                     <div class="header-left d-flex align-items-center">
-                        <img src="img/avatar_io.jpg" alt="carla" class="mx-2">
+                        <img :src="'img/avatar' + currentContact.avatar + '.jpg'" alt="currentContact.name" class="mx-2">
                         <div class="mx-2 pt-2">
-                            <h6>Carla</h6>
+                            <h6>{{currentContact.name}}</h6>
                             <p>Ultimo accesso oggi alle</p>
                         </div>
                     </div>
@@ -83,16 +83,10 @@
                 <!-- MAIN CHAT -->
                 <div id="chat">
                     <ul class="px-3">
-                        <li class="message-container p-3 sent">
-                            <div class="message p-2 rounded-3">
-                                <p>ciaooo</p>
-                                <time></time>
-                            </div>
-                        </li>
-                        <li class="message-container p-3 received">
-                            <div class="message p-2 rounded-3">
-                                <p>ciaooo</p>
-                                <time></time>
+                        <li v-for="message in currentContact.messages" :key="message.id" :class="['message-container', message.status]">
+                            <div class="message p-2 rounded-3 my-2">
+                              <p>{{ message.message }}</p>
+                              <time>{{ message.date }}</time>
                             </div>
                         </li>
                     </ul>

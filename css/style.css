@@ -124,11 +124,11 @@ header{
   justify-content: flex-start;
 }
 
-.message-container.sent.message{
+.message-container.sent .message{
   background-color: #d5f9ba;
 }
 
-.message-container.received.message{
+.message-container.received .message{
   background-color: white;
 }
 

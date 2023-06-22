@@ -199,12 +199,17 @@ const app = Vue.createApp({
                   ],
                 }
               ],  
-            selectedContact: null,  
+            currentIndex: 0,  
+        }
+    },
+    computed:{
+        currentContact(){
+            return this.contacts[this.currentIndex];
         }
     },
     methods: {
-        selectContact(contact) {
-          this.selectedContact = contact;
+        setCurrentIndex(index) {
+          this.currentIndex = index;
         }
     },
 });
