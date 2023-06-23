@@ -68,7 +68,7 @@
                 <!-- HEADER -->
                 <header class="d-flex align-items-center justify-content-between">
                     <div class="header-left d-flex align-items-center">
-                        <img :src="'img/avatar' + currentContact.avatar + '.jpg'" alt="currentContact.name" class="mx-2">
+                        <img :src="'img/avatar' + currentContact.avatar + '.jpg'" :alt="currentContact.name" class="mx-2">
                         <div class="mx-2 pt-2">
                             <h6>{{currentContact.name}}</h6>
                             <p>Ultimo accesso oggi alle</p>
@@ -85,8 +85,8 @@
                     <ul class="px-3">
                         <li v-for="message in currentContact.messages" :key="message.id" :class="['message-container', message.status]">
                             <div class="message p-2 rounded-3 my-2">
-                              <p>{{ message.message }}</p>
-                              <time>{{ message.date }}</time>
+                                <p>{{ message.message }}</p>
+                                <time>{{ message.date }}</time>
                             </div>
                         </li>
                     </ul>

@@ -241,7 +241,7 @@ const app = Vue.createApp({
               status: 'received',
             });
           }, 1000);
-        }
+        },
     },
 });
 
